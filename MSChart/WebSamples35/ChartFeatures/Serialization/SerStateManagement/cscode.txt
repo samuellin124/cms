@@ -1,0 +1,50 @@
+using System.Web.UI.DataVisualization.Charting;
+...
+
+private void Form_Init(object sender, System.EventArgs e)
+{
+	// Enabling the viewstate must be done very early in the loading of 
+	// a web page which is why it is done in the Page Init.  The preferred
+	// way to initialize the viewstate is done in the property browser
+	// so the property value is persisted in the ASPX page.
+
+	// Enable or disable the view state
+	Chart1.EnableViewState = true;
+}
+
+private void Page_Load(object sender, System.EventArgs e)
+{
+	// If this is not a postback or if state management is not selected, then
+	// add the source chart data to the chart.
+	if(!IsPostBack)
+	{
+		// Generate random data.  This routine will add 50 points to the chart
+		// and will have a ~100ms delay between the addition of each point.  This
+		// simulates the accessing a remote data source with a bad connection.
+		Data( Chart1.Series["Input"] );
+
+		// Create a string writer to serialize only the data source series.
+		// If selective serialization writing is used then a reader must also be
+		// used. If no selective serialization is performed (all series data and 
+		// appearance properties serialized), remove the reading and writing code.
+		StringWriter sw = new StringWriter();
+		Chart1.Serializer.Content = SerializationContents.Default;
+		Chart1.Serializer.Save(sw);
+
+		// Setting ViewStateData to a value will cause the chart to only serialize
+		// the value.  Not setting the property will cause all data and all 
+		// appearance properties to be serialized.
+		Chart1.ViewStateData = sw.ToString();
+	}
+	else
+	{
+		// Read the persisted data from the browser.  Reading is only required when
+		// data has been explicitly written.
+		StringReader sr = new StringReader(Chart1.ViewStateData);
+		Chart1.Serializer.Content = Content;
+		Chart1.Serializer.Load(sr);
+
+	}
+	...
+	
+}

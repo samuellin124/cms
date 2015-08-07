@@ -1,0 +1,142 @@
+@charset "big5";
+.body {
+	font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	background:url(../images/index_bg01.gif) #ffffff repeat-x top;
+}
+.body a:link {
+	text-decoration: none;
+	color:#666666;
+}
+.body a:hover {
+	text-decoration: underline;
+}
+.body img {
+	border:none;
+}
+
+#header {
+	position: relative;
+	margin: 0 auto;
+	width: 955px;
+	height:180px;
+	text-align: left;
+	background:url(../images/index_bg02.gif) no-repeat;
+}
+#nav{
+	width:270px;
+	position: absolute;
+	height:24px;
+	top:140px;
+	left:535px;
+	text-align: center;
+}
+#nav ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+#nav ul li{
+	display:inline;
+	
+	
+}
+#nav ul li a{
+	color:#666;
+	margin-left:3px;
+	margin-right:3px;
+	padding:2px 2px 0px 12px;
+	background:url(../images/index_nav_ulli.gif) no-repeat left;
+	background-position:2px 5px;
+}
+#nav ul li a:hover{
+	text-decoration:none;
+	background:url(../images/index_nav_ulli.gif) no-repeat left #dcddde;
+	background-position:2px 5px;
+}
+#contact{
+	position:absolute;
+	width:150px;
+	height:105px;
+	margin:35px 0px 0px 605px;
+	background:url(../images/index_contact.gif) no-repeat top left;
+	visibility: visible;
+	text-align:right;
+}
+#copy{
+	position:absolute;
+	width:150px;
+	height:105px;
+	margin:35px 0px 0px 675px;
+	background:url(../images/index_copyright.gif) no-repeat top left;
+	visibility: visible;
+	text-align:right;
+}
+#container {
+	position: relative;
+	width: 760px;
+	height:300px;
+	background:url(../images/index_container_bg.gif) no-repeat;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 24px;
+	margin-left: auto;
+}
+#logo{
+	width:440px;
+	float:left;
+	position:relative;
+	height:150px;
+	text-align:center;
+}
+#sysname{
+	width:440px;
+	float:left;
+	position:relative;
+	height:150px;
+	text-align:center;
+	line-height:100%;
+	background:url(../images/index_sysname.gif) no-repeat top left;
+}
+#login{
+	width:270px;
+	position:relative;
+	float:right;
+	margin-right:50px;
+	height:300px;
+	background:url(../images/index_login_bg.gif) no-repeat top left;
+}
+#login table{
+	width:250px;
+	margin-top:122px;
+}
+#login table tr th{
+	color:#333333;
+}
+#login table tr td{
+}
+#npois{
+	width:200px;
+	float:left;
+	margin:104px 0px 0px 0px;
+	height:36px;
+	text-align:center;
+	line-height:24px;
+	color:#666666;
+	font-size:10px;
+	border-right: 1px dotted #999;
+}
+#footer {
+	font-size:10px;
+	position: relative;
+	margin: 104px 0px 0px 0px;
+	width: 220px;
+	text-align: left;
+	margin-bottom:24px;
+	color:#666;
+	height:46px;
+	float:right;
+	position:relative;
+}

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body onload="init()">
+<br />
+<script type="text/javascript" language="javascript">
+if (location.href.split("?").length != 0) {
+    document.write(decodeURIComponent(location.href.split("?")[1]));
+}
+</script>
+<br />
+<br />
+<div id="countDown" style="padding-top:10px; font-family:Computerfont,Broadway BT; font-size:30pt; font-weight:bold; color:#ff0000;">
+</div>
+
+<script type="text/javascript" language="javascript">
+var startNum = 0; // 開始秒數
+var finalNum = 0; // 結束秒數
+function init() {
+    if (startNum >= finalNum) {
+        document.getElementById('countDown').innerHTML = startNum;
+        startNum--;
+        if (startNum < 0) {
+            //opener.location.href = opener.location.href + "&1=1"
+            opener.location.href = opener.location.href
+            window.close();
+        } else {
+            //document.getElementById('countDown').innerHTML = startNum;
+        }
+        var countClock = setTimeout("init()", 1000);
+    }
+}
+//實做幾秒後關閉視窗
+</script>
+<br />
+</body>
+</html>

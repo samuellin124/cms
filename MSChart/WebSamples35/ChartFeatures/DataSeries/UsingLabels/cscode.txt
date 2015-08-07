@@ -1,0 +1,33 @@
+using System.Web.UI.DataVisualization.Charting;
+...
+
+private void Page_Load(object sender, System.EventArgs e)
+{
+    // Set font attributes for the whole series
+    // Set labels Position
+    Chart1.Series["Series1"]["LabelStyle"] = "Center";
+
+    // Set labels font
+    Chart1.Series["Series1"].Font = new Font(FontNameList.SelectedItem.Text, 8);
+
+    // Set labels angle
+    Chart1.Series["Series1"].Angle = 45;
+
+    // Set labels color
+    Chart1.Series["Series1"].Color = "Red";
+    
+
+    // Set font attributes for the single data point
+    // Set labels Position
+    Chart1.Series["Series1"].Points[2]["LabelStyle"] = "Top";
+
+    // Set labels font
+    Chart1.Series["Series1"].Points[2].Font = new Font(FontNameList.SelectedItem.Text, 10, FontStyle.Bold);
+
+    // Set labels angle
+    Chart1.Series["Series1"].Points[2].Angle = 30;
+
+    // Set labels color
+    Chart1.Series["Series1"].Points[2].ForeColor = "Black";
+}
+...

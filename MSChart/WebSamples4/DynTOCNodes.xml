@@ -1,0 +1,152 @@
+<TOC ID="Root">
+  <TOCNode ID="ChartOverview" Priority="1" Path="Overview">
+    <Title>Overview</Title>
+  </TOCNode>
+  <TOCNode ID="Getting Started" Priority="120" Path="GettingStarted">
+    <Title>Getting Started</Title>
+  </TOCNode>
+  <TOCNode ID="ChartTypes" Priority="400" Path="ChartTypes">
+    <Title>Chart Types</Title>
+    <TOCNode ID="BarColumnCharts" ParentNodeID="ChartTypes" Priority="100" Path="ChartTypes">
+      <Title>Bar and Column Charts</Title>
+    </TOCNode>
+    <TOCNode ID="LineCharts" ParentNodeID="ChartTypes" Priority="150" Path="ChartTypes">
+      <Title>Line Charts</Title>
+    </TOCNode>
+    <TOCNode ID="AreaCharts" ParentNodeID="ChartTypes" Priority="200" Path="ChartTypes">
+      <Title>Area Charts</Title>
+    </TOCNode>
+    <TOCNode ID="PieDoughnutCharts" ParentNodeID="ChartTypes" Priority="250" Path="ChartTypes">
+      <Title>Pie and Doughnut Charts</Title>
+    </TOCNode>
+    <TOCNode ID="PointCharts" ParentNodeID="ChartTypes" Priority="300" Path="ChartTypes">
+      <Title>Point Charts</Title>
+    </TOCNode>
+    <TOCNode ID="RangeCharts" ParentNodeID="ChartTypes" Priority="350" Path="ChartTypes">
+      <Title>Range Charts</Title>
+    </TOCNode>
+    <TOCNode ID="CircularCharts" ParentNodeID="ChartTypes" Priority="400" Path="ChartTypes">
+      <Title>Circular Charts</Title>
+    </TOCNode>
+    <TOCNode ID="PyramidFunnelCharts" ParentNodeID="ChartTypes" Priority="450" Path="ChartTypes">
+      <Title>Accumulation Charts</Title>
+    </TOCNode>
+    <TOCNode ID="DataDistributionCharts" ParentNodeID="ChartTypes" Priority="500" Path="ChartTypes">
+      <Title>Data Distribution Charts</Title>
+    </TOCNode>
+    <TOCNode ID="JapanCharts" ParentNodeID="ChartTypes" Priority="600" Path="ChartTypes">
+      <Title>Price Change Financial Charts</Title>
+    </TOCNode>
+    <TOCNode ID="StockCharts" ParentNodeID="ChartTypes" Priority="650" Path="ChartTypes\FinancialCharts">
+      <Title>Advanced Financial Charts</Title>
+    </TOCNode>
+    <TOCNode ID="CombinationalCharts" ParentNodeID="ChartTypes" Priority="700" Path="ChartTypes">
+      <Title>Combinational Charts</Title>
+    </TOCNode>
+  </TOCNode>
+  <TOCNode ID="PopulatingData" Priority="500" Path="WorkingWithData">
+    <Title>Working with Chart Data</Title>
+    <TOCNode ID="DataBinding" ParentNodeID="PopulatingData" Priority="50" Path="WorkingWithData\DataBinding">
+      <Title>Data Binding</Title>
+    </TOCNode>
+    <TOCNode ID="DataSourceTypes" ParentNodeID="PopulatingData" Priority="100" Path="WorkingWithData">
+      <Title>Data Source Types</Title>
+    </TOCNode>
+    <TOCNode ID="Data Manipulation" ParentNodeID="PopulatingData" Priority="200" Path="WorkingWithData\DataManipulation">
+      <Title>Data Manipulation</Title>
+      <TOCNode ID="Sorting" ParentNodeID="Data Manipulation" Priority="100" Path="WorkingWithData\DataManipulation">
+        <Title>Sorting</Title>
+      </TOCNode>
+      <TOCNode ID="FindingSeriesPoints" ParentNodeID="Data Manipulation" Priority="100" Path="WorkingWithData\DataManipulation">
+        <Title>Finding Data Points</Title>
+      </TOCNode>
+      <TOCNode ID="Filtering" ParentNodeID="Data Manipulation" Priority="100" Path="WorkingWithData\DataManipulation">
+        <Title>Filtering</Title>
+      </TOCNode>
+      <TOCNode ID="Grouping" ParentNodeID="Data Manipulation" Priority="100" Path="WorkingWithData\DataManipulation">
+        <Title>Grouping</Title>
+      </TOCNode>
+      <TOCNode ID="Exporting" ParentNodeID="Data Manipulation" Priority="100" Path="WorkingWithData\DataManipulation">
+        <Title>Exporting</Title>
+      </TOCNode>
+      <TOCNode ID="CopyingSeriesValues" ParentNodeID="Data Manipulation" Priority="100" Path="WorkingWithData\DataManipulation">
+        <Title>Copying, Splitting, Merging Values</Title>
+      </TOCNode>
+      <TOCNode ID="SeriesAlignment" ParentNodeID="Data Manipulation" Priority="100" Path="WorkingWithData\DataManipulation">
+        <Title>Series Alignment</Title>
+      </TOCNode>
+    </TOCNode>
+    <TOCNode ID="Formulas" ParentNodeID="PopulatingData" Priority="300" Path="WorkingWithData\DataManipulation">
+      <Title>Formulas</Title>
+      <TOCNode ID="Financial" ParentNodeID="Formulas" Priority="100" Path="WorkingWithData\DataManipulation">
+        <Title>Financial</Title>
+      </TOCNode>
+      <TOCNode ID="Statistical" ParentNodeID="Formulas" Priority="100" Path="WorkingWithData\DataManipulation">
+        <Title>Statistical</Title>
+      </TOCNode>
+    </TOCNode>
+    <TOCNode ID="EmptyPoints" ParentNodeID="PopulatingData" Priority="600" Path="WorkingWithData\EmptyPoints">
+      <Title>Empty Points</Title>
+    </TOCNode>
+    <TOCNode ID="WorkingWithDates" ParentNodeID="PopulatingData" Priority="800" Path="WorkingWithData\Working with Dates">
+      <Title>Working with Dates</Title>
+    </TOCNode>
+  </TOCNode>
+  <TOCNode ID="ChartAppearance" Priority="600" Path="Appearance">
+    <Title>Appearance</Title>
+  </TOCNode>
+  <TOCNode ID="Rendering" Priority="800" Path="Rendering">
+    <Title>Rendering</Title>
+  </TOCNode>
+  <TOCNode ID="ChartFeatures" Priority="1000" Path="ChartFeatures">
+    <Title>Chart Features</Title>
+    <TOCNode ID="DataSeries" ParentNodeID="ChartFeatures" Priority="50" Path="ChartFeatures">
+      <Title>Data Series</Title>
+    </TOCNode>
+    <TOCNode ID="ChartArea" ParentNodeID="ChartFeatures" Priority="200" Path="ChartFeatures\ChartArea">
+      <Title>Chart Areas</Title>
+    </TOCNode>
+    <TOCNode ID="Axis" ParentNodeID="ChartFeatures" Priority="210" Path="ChartFeatures\Axis">
+      <Title>Axes</Title>
+    </TOCNode>
+    <TOCNode ID="Legend" ParentNodeID="ChartFeatures" Priority="210" Path="ChartFeatures\Legend">
+      <Title>Legends</Title>
+    </TOCNode>
+    <TOCNode ID="Labels" ParentNodeID="ChartFeatures" Priority="220" Path="ChartFeatures\Labels">
+      <Title>Labels</Title>
+    </TOCNode>
+    <TOCNode ID="Customizations" ParentNodeID="ChartFeatures" Priority="250" Path="ChartFeatures\Customizations">
+      <Title>Customization and Events</Title>
+    </TOCNode>
+    <TOCNode ID="Titles" ParentNodeID="ChartFeatures" Priority="250" Path="ChartFeatures\Titles">
+      <Title>Titles</Title>
+    </TOCNode>
+    <TOCNode ID="Annotations" ParentNodeID="ChartFeatures" Priority="600" Path="ChartFeatures\Annotations">
+      <Title>Annotations</Title>
+    </TOCNode>
+    <TOCNode ID="Serialization" ParentNodeID="ChartFeatures" Priority="800" Path="ChartFeatures\Serialization">
+      <Title>Serialization</Title>
+    </TOCNode>
+    <TOCNode ID="StateManagement" ParentNodeID="ChartFeatures" Priority="2000" Path="ChartFeatures">
+      <Title>State Management</Title>
+    </TOCNode>
+  </TOCNode>
+  <TOCNode ID="Interactivity" Priority="1000" Path="Interactivity">
+    <Title>Interactivity and AJAX</Title>
+    <TOCNode ID="AJAXInteractivity" Priority="500" ParentNodeID="Interactivity" Path="Interactivity">
+      <Title>AJAX</Title>
+    </TOCNode>
+    <TOCNode ID="Tooltips" Priority="500" ParentNodeID="Interactivity" Path="Interactivity">
+      <Title>Tooltips</Title>
+    </TOCNode>
+    <TOCNode ID="Drill Down" Priority="600" ParentNodeID="Interactivity" Path="Interactivity">
+      <Title>Drill Down</Title>
+    </TOCNode>
+    <TOCNode ID="Client Side Scripts" Priority="700" ParentNodeID="Interactivity" Path="Interactivity">
+      <Title>Client Side Scripts</Title>
+    </TOCNode>
+    <TOCNode ID="ImageMaps" Priority="800" ParentNodeID="Interactivity" Path="Interactivity">
+      <Title>Image Maps</Title>
+    </TOCNode>
+  </TOCNode>
+</TOC>

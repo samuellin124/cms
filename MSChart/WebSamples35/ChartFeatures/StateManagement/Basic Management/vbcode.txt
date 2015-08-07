@@ -1,0 +1,38 @@
+Imports System.Web.UI.DataVisualization.Charting
+...
+
+Private Sub Form_Init(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Init
+
+	' Enabling the viewstate must be done very early in the loading of 
+	' a web page which is why it is done in the Page Init.  The preferred
+	' way to initialize the viewstate is done in the property browser
+	' so the property value is persisted in the ASPX page.
+
+	' Enable or disable the view state
+	Chart1.EnableViewState = True
+
+End Sub 'Page_Load 
+
+Private Sub Page_Load(object sender, System.EventArgs e) Handles MyBase.Load
+
+	' Enable or disable the view state
+	Chart1.EnableViewState = True
+			
+	' Determine what content should be serialized in the browser.
+	Chart1.ViewStateContent = SerializationContents.Default
+	...
+	
+	' If this is not a postback or if state management is not selected, then
+	' add the source chart data to the chart.  Also, if there was no state
+	' management in the previous page view and there is now, reload the data
+	If Not EnableStateManagement.Checked Or Not IsPostBack Or (enabled = "False" AND EnableStateManagement.Checked) Then 
+	
+		' Generate random data.
+		Data( Chart1.Series("Input") )
+
+	End If	
+	...
+	
+End Sub
+
+
